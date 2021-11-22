@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+<div class="space">
+    <div class="planet-area">
+        <img class="rocket" src="rocket.png">
+        <img class="planet" src="mars.png">
+    </div>
+    <div class="control-panel">
+        <div class="control-panel__inner">
+            <div class="password-area">
+            <input type="password" placeholder="Enter password to unlock" id="pwdField">
+            <input type="button" value="ok" id="btnOk">
+            </div>
+            <div class="check-buttons">
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+            </div>
+            <div class="levers">
+                <input type="range" min="0" max="10" step="1" disabled>
+                <input type="range" min="0" max="10" step="1" disabled>
+                <input type="range" min="0" max="10" step="1" disabled>
+                <input type="range" min="0" max="10" step="1" disabled>
+                <input type="range" min="0" max="10" step="1" disabled>
+            </div>
+            <input type="button" value="launch" id="launchBtn" disabled>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+body {
+
+}
+
+.space {
+    background-image: url("space.png");
+    display: flex;
+}
+
+.planet-area {
+
+}
+
+.rocket {
+    position: absolute;
+    width: 17%;
+    z-index: 2;
+    transform: rotate(25deg);
+    left: 25%; top: 15%;
+}
+
+.planet {
+    position: relative;
+    z-index: 3;
+
+}
+
+.check-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.levers {
+    display: flex;
+    flex-grow: 3;
+    align-items: center;
+}
+
+.control-panel {
+    display: flex;
+    background: repeating-linear-gradient(45deg, black, black, yellow 5px, yellow 10px);
+    height: 40vh;
+    align-self: center;
+}
+
+.control-panel__inner {
+    margin: 1% 1% 1% 1%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 98%;
+}
+
+input[type="password"] {
+    border: 3px solid yellow;
+    color: darkgoldenrod;
+    flex-grow: 0;
+    width: 70%;
+}
+
+input[value="ok"] {
+    background-color: yellow;
+    flex-grow: 0;
+    width: 20%;
+}
+
+input[value="launch"] {
+    background-color: red;
+    border-radius: 40%;
+    flex-grow: 0;
+    width: 15%;
+    align-self: center;
+    margin-bottom: 5%;
+}
+
+input[type="range"] {
+    transform: rotate(270deg);
+}
+
+.password-area {
+    align-self: center;
+    margin-top: 5%;
+}
+
+.rocketLaunch {
+    animation: rocketLaunch 2s ease-in;
+}
+
+@keyframes rocketLaunch {
+    0% {
+        transform: translateX(0) translateY(0) rotate(25deg);
+    }
+    100% {
+        transform: translateX(100%) translateY(-150%) rotate(27deg);
+    }
+}
